@@ -102,7 +102,7 @@ HashMap *newHashMap(size_t size)
     return map;
 }
 
-HashMap *destroy(HashMap *map)
+void *destroyMap(HashMap *map)
 {
     if (map)
     {

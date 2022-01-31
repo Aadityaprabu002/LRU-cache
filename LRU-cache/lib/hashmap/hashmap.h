@@ -46,7 +46,7 @@ struct HashMap
     and allocates memory for the instance  
 */
 HashMap *newHashMap(size_t size);
-HashMap *destroy(HashMap *map);
+void *destroyMap(HashMap *map);
 HashMap *insert(HashMap *map, const char *key, const Node *value);
 Node *obtain(HashMap *map, const char *key);
 static HashMap *reHash(HashMap *map);

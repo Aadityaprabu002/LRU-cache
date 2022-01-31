@@ -171,7 +171,7 @@ int main()
         getchar();
         system("cls");
     } while (ch != 3);
-    destroy(map);
+    destroyMap(map);
     destroyList(head);
     return 0;
 }
